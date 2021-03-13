@@ -21,6 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Networking_LatencyComp_Godot"
+run/main_scene="res://Scenes/menu.tscn"
 config/icon="res://icon.png"
 
 [gdnative]

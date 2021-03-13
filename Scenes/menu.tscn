@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Networking_Framework/menu_base.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="CenterContainer"]
+margin_left = 486.0
+margin_top = 278.0
+margin_right = 538.0
+margin_bottom = 322.0
+
+[node name="Button" type="Button" parent="CenterContainer/GridContainer"]
+margin_right = 52.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "Server"
+
+[node name="Button2" type="Button" parent="CenterContainer/GridContainer"]
+margin_top = 24.0
+margin_right = 52.0
+margin_bottom = 44.0
+text = "Client"
