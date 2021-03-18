@@ -24,21 +24,27 @@ __meta__ = {
 }
 
 [node name="GridContainer" type="GridContainer" parent="CenterContainer"]
-margin_left = 486.0
-margin_top = 278.0
-margin_right = 538.0
-margin_bottom = 322.0
+margin_left = 483.0
+margin_top = 264.0
+margin_right = 541.0
+margin_bottom = 336.0
+
+[node name="LineEdit" type="LineEdit" parent="CenterContainer/GridContainer"]
+margin_right = 58.0
+margin_bottom = 24.0
+placeholder_text = "Name"
 
 [node name="Button" type="Button" parent="CenterContainer/GridContainer"]
-margin_right = 52.0
-margin_bottom = 20.0
+margin_top = 28.0
+margin_right = 58.0
+margin_bottom = 48.0
 size_flags_horizontal = 3
 text = "Server"
 
 [node name="Button2" type="Button" parent="CenterContainer/GridContainer"]
-margin_top = 24.0
-margin_right = 52.0
-margin_bottom = 44.0
+margin_top = 52.0
+margin_right = 58.0
+margin_bottom = 72.0
 text = "Client"
 [connection signal="pressed" from="CenterContainer/GridContainer/Button" to="." method="_CreatePeerAsServer"]
 [connection signal="pressed" from="CenterContainer/GridContainer/Button2" to="." method="_CreatePeerAsClient"]

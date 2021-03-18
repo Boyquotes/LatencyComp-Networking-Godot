@@ -24,6 +24,10 @@ config/name="Networking_LatencyComp_Godot"
 run/main_scene="res://Scenes/menu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+ServerBase="*res://Networking_Framework/Server/server_base.gd"
+
 [gdnative]
 
 singletons=[ "res://git_api.gdnlib" ]
